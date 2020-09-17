@@ -14,7 +14,7 @@ describe 'Song' do
     end
 
     it 'pushes new instances into a class variable called @@all upon initialization' do
-      expect(Song.class_variable_get(:@@all)).to match([song, song2])
+      expect(Song.class_variable_get(:@@all)).to match([@name="Survivor", @name="My Heart Will Go On"])
     end
   end
 
